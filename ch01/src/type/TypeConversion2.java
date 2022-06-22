@@ -1,4 +1,4 @@
-package ch01;
+package type;
 
 public class TypeConversion2 {
 
@@ -11,7 +11,7 @@ public class TypeConversion2 {
 		System.out.println(x * y);
 		System.out.println(x / y);  //기본적으로 int형으로 계산됨
 		
-		System.out.println((double)x / y);
+		System.out.println((double)x / y); //double로 자동 형변환 됨
 
 	}
 
