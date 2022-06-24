@@ -12,7 +12,14 @@ public class EvenOdd {
 		System.out.print("숫자입력 : ");
 		
 		int n = sc.nextInt();
-		String result = (n % 2 == 0) ? "짝수" : "홀수";
+		String result;
+		//String result = (n % 2 == 0) ? "짝수" : "홀수";
+		
+		if(n % 2 != 0) {
+			result = "홀수";
+		}else {
+			result = "짝수";
+		}
 		
 		System.out.println(result);
 		
