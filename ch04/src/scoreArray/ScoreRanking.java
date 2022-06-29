@@ -1,0 +1,27 @@
+package scoreArray;
+
+public class ScoreRanking {
+
+	public static void main(String[] args) {
+		// 순위 정하기
+		int[] score = {80, 90, 74, 100, 50};
+		int[] rank = new int[5];
+		//rank = {1, 1, 1, 1, 1};
+		
+		for(int i = 0; i < score.length; i++) {
+			int count = 1;
+			for(int j = 0; j < score.length; j++) {
+				if(score[i] < score[j])
+					count++;
+			}
+			rank[i] = count;
+			System.out.println(score[i]+ "점은 " + rank[i] + "위 입니다.");
+		}
+		/*
+		 * i=0, 80<80, 80<90, 80<74, 80<100, 80<50 count = 3
+		 * i=1, 90<80, 90<90, 90<74, 90<100, 90<50 count = 2
+		 */
+
+	}
+
+}

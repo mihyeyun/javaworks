@@ -8,5 +8,8 @@ public class Product {
 	public Product(String productName, int price) {
 		this.productName = productName;
 		this.price = price;
-	};
+	}
+	public String showInfo() {
+		return productName + ", " + price;
+	}
 }
