@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BonusPoint {
 
 	public static void main(String[] args) {
-		// 보너스포인트 = 가격(price) x 보너스 적립율 (5%)(0.05)
+		// 보너스포인트 = 가격(price) x 보너스적립율(5%)
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("고객의 이름을 입력하세요 : ");
@@ -24,7 +24,5 @@ public class BonusPoint {
 		System.out.printf("%s님의 보너스 포인트는 %,d점 입니다.", name, bonusPoint);
 		
 		sc.close();
-
 	}
-
 }

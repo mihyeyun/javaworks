@@ -11,8 +11,7 @@ public class LimitSpeed {
 			System.out.println("제한 속도 위반!! 과태료 10만원 부과 대상");
 		}
 		
-		System.out.println("시속 " + limitSpeed + "km 입니다.");
-
+		//출력
+		System.out.println("시속 " + limitSpeed + "km입니다.");
 	}
-
 }
