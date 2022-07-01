@@ -9,7 +9,7 @@ public class Subject {
 	public void setSubjectName(String subjectName) {
 		this.subjectName =subjectName;
 	}
-	public String setSubjectName() {
+	public String getSubjectName() {
 		return subjectName;
 	}
 	
@@ -20,4 +20,5 @@ public class Subject {
 	public int getScorePoint() {
 		return scorePoint;
 	}
+
 }
