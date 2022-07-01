@@ -13,7 +13,7 @@ public class CardCompany {
 		return instance;
 	}
 	
-	//차를 생산(생성)하는 메서드
+	//카드를 생산(생성)하는 메서드
 	public Card createCard() {
 		Card card = new Card();
 		return card;
