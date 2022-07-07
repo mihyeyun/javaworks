@@ -1,4 +1,4 @@
-package annonymous;
+package annonymous.person;
 
 public class LocallinnerTest2 {
 	int outNum = 100;
