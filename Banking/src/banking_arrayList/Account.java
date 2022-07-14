@@ -1,11 +1,11 @@
-package banking;
+package banking_arrayList;
 
 //VO(Value Object)
 public class Account {
 	//필드
-	private String ano;		//계좌번호
-	private String owner;	//계좌주
-	private int balance;	//잔액
+	private String ano;     //계좌 번호
+	private String owner;   //계좌주
+	private int balance;    //잔액
 	
 	//생성자
 	public Account(String ano, String owner, int balance) {
@@ -37,5 +37,4 @@ public class Account {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
-	
 }

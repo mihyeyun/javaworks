@@ -1,8 +1,8 @@
-package banking;
+package banking_array;
 
 import java.util.Scanner;
 
-public class Main2 {
+public class ArrayMain {
 	//배열의 크기가 100인 Account 형 배열 선언
 	
 		private static Account[] accountArray = new Account[100];
@@ -43,6 +43,11 @@ public class Main2 {
 			System.out.print("계좌 번호: ");
 			String ano = scanner.next();
 			//계좌가 없습니다. 다시 입력하세요.
+			if(findAccount(ano) == null) {
+				System.out.println("계좌가 없습니다. 다시 입력하세요.");
+				System.out.println("계좌 번호: ");
+				ano = scanner.next();
+			}
 			
 			System.out.print("계좌주: ");
 			String owner = scanner.next();
