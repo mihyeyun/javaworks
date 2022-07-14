@@ -30,5 +30,24 @@ public class Member {
 	public String toString() {
 		return memberName + " 회원님의 아이디는 " + memberId + "입니다.";
 	}
+
+	@Override
+	public int hashCode() {
+		// String형인 경우  - memberId.hasCode();
+		return memberId;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Member) {
+			Member member = (Member)obj;
+			if(member.memberId == memberId) { //this.memberId == member.memberId
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	
 	
 }
